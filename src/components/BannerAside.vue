@@ -1,42 +1,62 @@
 <script setup>
-import { useRouter } from "vue-router";
-
-const router = useRouter();
-
-
-  router.push({
-
-  });
-
-
+function openAd() {
+  window.open("https://www.exemplo.com/anuncio", "_blank");
+}
 </script>
 
 <template>
-  <aside class="sidebar">
-    <div class="search-box">
-
+  <aside class="asidebar">
+    <div class="bannerbox" @click="openAd">
+      <span class="ad-label">Publicidade</span>
+      <span class="placeholder-text">Seu anúncio aqui</span>
     </div>
   </aside>
 </template>
 
 <style scoped>
-.sidebar {
+.asidebar {
   padding: 1rem;
-  background: #181818;
-  border-left: 2px solid #333;
-  color: white;
-  height: 100%;
+  height: 100vh;
   position: sticky;
   top: 0;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
-.search-box input {
+/* BANNER ESTILIZADO */
+.bannerbox {
   width: 100%;
-  padding: 0.6rem;
-  border-radius: 6px;
-  border: none;
-  margin-top: 0.5rem;
-  outline: none;
+  height: 600px; /* tamanho padrão de banner vertical */
+  background: linear-gradient(145deg, #242424, #111);
+  border: 2px solid #42b88355;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 18px #42b88322;
+  text-align: center;
+}
+
+.bannerbox:hover {
+  border-color: #42b883;
+  box-shadow: 0 0 18px #42b883;
+  transform: scale(1.02);
+}
+
+.placeholder-text {
+  color: #888;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.ad-label {
+  font-size: 0.8rem;
+  color: #42b883;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 </style>

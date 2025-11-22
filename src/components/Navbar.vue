@@ -3,7 +3,9 @@
 
 <template>
   <nav class="navbar">
-    <h2 class="logo"><router-link to="/">GameHub</router-link></h2>
+    <h2 class="logo"><router-link to="/">
+      <img src="/vite.svg" alt="GameHub Logo" class="logo-img" />
+      <span>GameHub</span></router-link></h2>
 
     <ul class="nav-links">
       <li><router-link to="/">Home</router-link></li>
@@ -14,36 +16,73 @@
 
 <style scoped>
 .navbar {
-  background: #121212;
+  background: #181818;
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
   width: 90vw;
   max-width: 1200px;
-  margin: 0 auto; 
-  border-radius: 10px;
+  margin: 1rem auto;
+  border-radius: 12px;
+  border: 1px solid #2b2b2b;
+  box-shadow: 0 0 12px #42b88322;
+  backdrop-filter: blur(6px);
+  top: 0;
+  z-index: 999;
+}
+.navbar h2 a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.logo a{
-  font-size: 1.6rem;
+/* LOGO */
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
   color: #42b883;
+  transition: 0.3s ease-in-out;
 }
 
+.logo a:hover {
+  text-shadow: 0 0 10px #42b883;
+}
+
+/* LINKS DE NAVEGAÇÃO */
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 2rem;
+  list-style: none;
 }
 
 .nav-links a {
-  color: white;
+  color: #dcdcdc;
+  font-size: 1.4rem;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #42b883;
+  bottom: -4px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+  border-radius: 2px;
 }
 
 .nav-links a:hover {
   color: #42b883;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 </style>

@@ -23,7 +23,7 @@ watch(() => route.params.id, () => {
 
 <template>
   <div class="details">
-    <img :src="game.image" class="banner" />
+    <img :src="game.image" class="banner"  alt="`Download torrent de ${game.title}`"/>
     <h1>{{ game.title }}</h1>
     <p>{{ game.description }}</p>
 
