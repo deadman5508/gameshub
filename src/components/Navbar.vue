@@ -11,6 +11,7 @@
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/games">Game List</router-link></li>
     </ul>
+    <span></span>
   </nav>
 </template>
 
@@ -37,7 +38,7 @@
   justify-content: center;
 }
 
-/* LOGO */
+
 .logo a {
   font-size: 1.8rem;
   font-weight: 800;
@@ -50,11 +51,12 @@
   text-shadow: 0 0 10px #42b883;
 }
 
-/* LINKS DE NAVEGAÇÃO */
+
 .nav-links {
   display: flex;
   gap: 2rem;
   list-style: none;
+  padding-right: 8vw;
 }
 
 .nav-links a {
@@ -64,18 +66,6 @@
   font-weight: 600;
   position: relative;
   transition: 0.3s ease-in-out;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 3px;
-  background: #42b883;
-  bottom: -4px;
-  left: 0;
-  transition: 0.3s ease-in-out;
-  border-radius: 2px;
 }
 
 .nav-links a:hover {

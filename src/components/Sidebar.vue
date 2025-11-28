@@ -76,7 +76,6 @@ const topDownloads = ref([]);
 <style scoped>
 .sidebar {
   background: #181818;
-  padding: 1.5rem;
   border-left: 2px solid #2b2b2b;
   color: white;
   border-radius: 12px;
@@ -100,7 +99,7 @@ const topDownloads = ref([]);
 
 /* INPUT DE PESQUISA */
 .search-box input {
-  width: 90%;
+  width: 80%;
   padding: 0.75rem;
   border-radius: 8px;
   border: 1px solid #2e2e2e;
@@ -130,7 +129,6 @@ const topDownloads = ref([]);
   cursor: pointer;
   border-radius: 8px;
   color: #eaeaea;
-  background: rgba(255,255,255,0.03);
   transition: 0.25s ease-in-out;
   font-weight: 500;
 }

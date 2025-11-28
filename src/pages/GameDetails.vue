@@ -30,14 +30,15 @@ watch(() => route.params.id, () => {
     <div>
       <h2>Instruçoes de downloads</h2>
       <p>TORRENT 1337x : Nesta opção você será redirecionado para o site 1337x é só clicar na opcão magnetic link e pronto você poderá baixar seu arquivo com velocidade superior a 10mb/s por segundo.</p>
-      <p>NAVEGADOR: Você será redirecionado para uma pagina de download via navegador com velocidade superior a 20mb/s recomendo usar um gerenciador de download externo se nao seu download fica quebrando.</p>
+      <p>NAVEGADOR: Você será redirecionado para uma pagina de download Buzzheavier ou GOFILE com velocidade superior a 20mb/s recomendo usar um gerenciador de download externo se não seu download fica quebrando.</p>
       <p>TODOS OS DOWNLOADS FORAM TESTADOS ENTÃO NÃO TEM VIRUS, os downloads via torrent precisam ser instalados, os via navegador ja vem instalado em uma pasta rar só extrair e jogar.</p>
       <p>Não mantemos nenhum jogo em nosso ou arquivo em nosso site apenas disponibizamos e organiamos os links de outros sites</p>
-      <p>Duvidas? chama no meu discord blackhammer4930, gostou e quer manter o site ativo manda um pix oub.web.design@gmail.com </p>
+      <p>Duvidas? chama no meu discord blackhammer4930, gostou e quer manter o site ativo manda um pix no discord blackhammer4930
+ </p>
     </div>
     <div class="buttons">
-      <a :href="game.link1" target="_blank" rel="noopener noreferrer" class="btn"><DownloadIcon class="icon"/> Torrent 1337x</a>
-      <a :href="game.link1" target="_blank" rel="noopener noreferrer" class="btn"><DownloadIcon class="icon"/> Navegador</a>
+      <a :href="game.link1" target="_blank" rel="noopener noreferrer" class="btn"><DownloadIcon class="icon"/>Torrent 1337x</a>
+      <a :href="game.link2" target="_blank" rel="noopener noreferrer" class="btn"><DownloadIcon class="icon"/> Navegador</a>
   </div>
     <div class="video-container">
     <iframe
