@@ -3,7 +3,7 @@ import GameList from "../components/GameList.vue";
 </script>
 
 <template>
-  <h1>Catálogo de Jogos</h1>
+  <h1>Jogos grátis torrent</h1>
   <GameList />
 </template>
 

@@ -4,8 +4,8 @@
 <template>
   <nav class="navbar">
     <h2 class="logo"><router-link to="/">
-      <img src="/vite.svg" alt="GameHub Logo" class="logo-img" />
-      <span>GameHub</span></router-link></h2>
+      <img src="/vite.svg" alt="Jogos Torrent gratis" class="logo-img" />
+      <span>JogosTorrentgratis</span></router-link></h2>
 
     <ul class="nav-links">
       <li><router-link to="/">Home</router-link></li>
