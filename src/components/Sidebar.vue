@@ -9,6 +9,22 @@ const topDownloads = ref([]);
 
   onMounted(() => {
     topDownloads.value = allGames;
+      const downloadsList = document.querySelector(".downloads ul");
+      if (downloadsList) {
+          const bannerContainer = document.createElement("div");
+          bannerContainer.id = "hilltop-banner";
+          bannerContainer.style.marginTop = "1rem"; // dá espaçamento
+          downloadsList.appendChild(bannerContainer);
+
+          const script = document.createElement("script");
+          script.settings = {};
+          script.settings.zone = 6715852; // sua zona Hilltop
+          script.src = "//cooperative-reveal.com/b/X/V.sbdcGBlE0/YuW/cE/jeWmV9YuIZ/Ucl/kYP/TKYb3/MfTnUh4/N/TyIwtfNjj/cGxoN-TAgp1/MQwz";
+          script.async = true;
+          script.referrerPolicy = "no-referrer-when-downgrade";
+
+          bannerContainer.appendChild(script);
+      }
   });
 
   const listop = computed(() =>topDownloads.value.slice());
