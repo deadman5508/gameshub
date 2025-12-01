@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.jogostorrentgratis.shop/sitemap.xml
+Possuo conhecimento teorico e pratico de javascript com typescript, conhecimento tecnico em Vue e Angular com forte dominio do React,  utilização de estados, hooks, consumo de apis rest, utilização de token para validação, com foco em UI/UX , uso de bibliotecas como tailwind e bootstrap entre outras,  sistemas de authenticação como clerk, testes via insomia para consumo de backend, e conhecimento pratico em plataformas como vercel , netlify e hostinger para hospedam, dominio e migração, uso de metodologia scrum e e versionamento no gitHub.
