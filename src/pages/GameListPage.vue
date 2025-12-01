@@ -6,17 +6,15 @@ import allGames from "../data/games.json";
 const router = useRouter();
 const games = ref([]);
 
-// Simula a busca na API
+
 onMounted(() => {
   games.value = allGames;
 });
 
-// Ordena pelo título (A-Z)
 const sortedGames = computed(() =>
   games.value.slice().sort((a, b) => a.title.localeCompare(b.title))
 );
 
-// Função de navegação ao clicar no jogo
 function goToGame(id) {
   router.push(`/game/${id}`);
 }
@@ -36,6 +34,7 @@ function goToGame(id) {
         {{ g.title }}
       </li>
     </ul>
+    <a href="/" class="back-home">Voltar para a Home</a>
   </div>
 </template>
 
@@ -63,5 +62,17 @@ h1 {
 
 .game-list li:hover {
   color: #42b883;
+}
+.back-home {
+  margin-top: 2rem;
+  display: inline-block;
+  color: #42b883;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.back-home:hover {
+  text-decoration: underline;
 }
 </style>
